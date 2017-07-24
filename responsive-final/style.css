@@ -194,6 +194,12 @@ header{
 
     }
     
+    #site_footer {
+        background-color: orange;
+        text-align: center;
+        padding: 10px;
+    }
+    
     #site_footer a {    
         padding: 10px 10px;
     }
