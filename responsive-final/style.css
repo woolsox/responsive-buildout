@@ -1,0 +1,254 @@
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
+body{
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd;
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ul{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    color: #009999;
+}
+
+h2, h3{
+    margin-bottom: 0;
+}
+
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+header{ 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;
+}
+
+#site_container{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#main_nav{
+    text-align: center;
+}
+
+#main_nav a{
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#main_nav a:hover{
+    background: #ddddff;
+}
+
+/* ANY DEVICE LARGER THAN 1100PX (DESKTOP) */
+
+@media (min-width: 1101px) {
+    #logo {
+        display: inline-block;
+        text-align: left;
+        margin-right: 350px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    
+    #main_nav {
+        position: fixed;
+        left: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #main_nav a {
+        width: 80px;
+        margin-left: -85px;
+        margin-right: 100px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    
+    header {
+        display: flex;
+        height: 50px;
+    }
+    
+    #main_content {
+        background-color: #ddffff;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+    }
+    
+    #main_content p {
+        padding-left: 25px;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+    #main_content ul {
+        margin-left: -300px;
+    }
+   
+    #main_content h1 {
+        padding-left: 25px;
+    }
+    
+    #main_content h2 {
+        margin-left: -300px;
+    }
+    
+    #sidebar_content {
+        background-color: #ffffdd;
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    #sidebar_content div {
+        width: 30%;
+        padding: 20px 20px;
+        margin-left: 25px;
+    }
+    
+    #site_footer {
+        margin-top: 15px;
+        background-color: orange;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #site_footer a {    
+        padding: 10px 10px;
+    }
+    
+}
+
+/* DEVICE WITH 1100PX MAX WIDTH (TABLET) */
+
+@media (max-width: 1100px) {
+    #logo {
+        text-align: center;
+    }
+    
+    #main_nav a {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 25%;
+    }
+    
+    #main_content {
+        background-color: #ddffff;
+        padding: 10px 10px;
+    }
+    
+    #sidebar_content {
+        background-color: #ffffdd;  
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #sidebar_content div {
+        background-color: #ffffdd;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        padding-left: 30px;
+        width: 25%;
+    }
+    
+    #site_footer {
+        background-color: orange;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #site_footer a {    
+        padding: 10px 10px;
+    }
+ 
+}
+
+/*  DEVICE WITH 600PX MAX-WIDTH (MOBILE)   */
+
+@media (max-width: 600px) {
+    #logo h1 {
+        text-align: center;
+    }
+    
+    #main_nav {
+        display: flex;
+        flex-direction: column;    
+    }
+    
+    #main_nav a {
+        text-align: center;
+        padding-left: 37%;
+        padding-right: 37%;
+    }
+    
+    #main_content {
+        background-color: #ddffff;
+        padding: 10px 10px;
+        width: 95.5%;
+    }
+    
+    #sidebar_content div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 95.5%;
+        height: 30%;      
+    }    
+    
+    #site_footer {
+        background-color: orange;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #site_footer a {    
+        padding: 10px 10px;
+    }
+    
+}
